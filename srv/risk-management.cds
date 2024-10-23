@@ -10,3 +10,8 @@ service RiskService {
 // BusinessPartner will be used later
 //@readonly entity BusinessPartners as projection on rm.BusinessPartners;
 }
+
+@path: 'service/items'
+service ItemsService {
+    entity Items as projection on rm.Items;
+}
